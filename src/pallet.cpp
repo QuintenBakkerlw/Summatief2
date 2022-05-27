@@ -1,4 +1,6 @@
 #include "pallet.hpp"
+#include <iostream>
+using namespace std;
 
 Pallet::Pallet(int itemCount, int itemCapacity, std::string itemName){
     this-> itemCount = itemCount;
@@ -17,7 +19,7 @@ std::string Pallet::getItemName(){
 }
 
 bool Pallet::reallocateEmptyPallet(std::string itemName, int itemCapacity){
-    if (itemCount = 0){
+    if (itemCount == 0){
         this->itemName = itemName;
         this->itemCapacity = itemCapacity;
         return true;

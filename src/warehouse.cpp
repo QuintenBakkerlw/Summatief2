@@ -11,7 +11,7 @@ std::vector<Employee> Warehouse::getEmployees(){
     return employees;
 }
 
-std::string Warehouse::emplyeeList(){
+std::string Warehouse::employeeList(){
     std::string employeeList;
     for (auto v : getEmployees()){
         employeeList += v.getName();
