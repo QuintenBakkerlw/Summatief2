@@ -50,6 +50,10 @@ std::string Warehouse::employeeList(){
     return employeeList;
 }
 bool Warehouse::rearrangeShelf(Shelf& shelf, Employee& employee){
+    // checks if employee is avaliable.
+    if (employee.getBusy() == true){
+        return false;
+    }
     int x = 0;
     std::vector<Pallet> vec = shelf.getPallet();
     std::vector<Pallet> newPallet;
