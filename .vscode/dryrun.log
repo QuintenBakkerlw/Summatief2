@@ -1,0 +1,15 @@
+C:\msys64\mingw64\bin\mingw32-make.exe all --dry-run --keep-going --print-directory
+mingw32-make: Entering directory 'c:/Users/quint/ProjectAC/Summatief2'
+del obj\employee.o obj\pallet.o obj\shelf.o obj\warehouse.o testobj\test_vector.o employee.d pallet.d shelf.d warehouse.d test_vector.d warehouse.exe
+ 
+g++ -std=c++17 -Wall -o obj/employee.o -c src/employee.cpp
+g++ -std=c++17 -Wall -o obj/pallet.o -c src/pallet.cpp
+g++ -std=c++17 -Wall -o obj/shelf.o -c src/shelf.cpp
+ 
+g++ -std=c++17 -Wall -o obj/warehouse.o -c src/warehouse.cpp
+g++ -std=c++17 -Wall   -c -o main.o main.cpp
+g++ -std=c++17 -Wall -o warehouse obj/employee.o obj/pallet.o obj/shelf.o obj/warehouse.o main.o 
+ 
+g++ -std=c++17 -Wall -o test_vector obj/employee.o obj/pallet.o obj/shelf.o obj/warehouse.o testobj/test_vector.o 
+mingw32-make: Leaving directory 'c:/Users/quint/ProjectAC/Summatief2'
+ 
