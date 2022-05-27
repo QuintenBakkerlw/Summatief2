@@ -8,7 +8,9 @@ class Shelf{
         std::vector<Pallet> planken;
         Shelf(int id);
 
-        // int getShelf();
+        int getShelf();
+        /// @brief getShelf Function. Gets de shelf id.
+        /// @return int, shelf id.
 
         std::vector<Pallet> getPallet();
         /// @brief getPallet Function. Gets de vector of pallets.
